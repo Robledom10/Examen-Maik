@@ -9,13 +9,13 @@ public class Demonio extends Personajes {
 
     @Override
     public Integer atacar() {
-        Integer valorAtaque = getFuerza() * 2;
+        Integer valorAtaque = getFuerza() * 5;
 
         if (getFuerza() > 7) {
-            valorAtaque = getFuerza() * 3;
+            valorAtaque = getFuerza() * 4;
             setVida(getVida() - valorAtaque);
         } else if (getFuerza() <= getInteligencia()) {
-            valorAtaque = getFuerza() * 5;
+            valorAtaque = getFuerza() * 6;
             setVida(getVida() - valorAtaque);
         }
         return getVida();
