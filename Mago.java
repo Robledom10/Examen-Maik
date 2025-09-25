@@ -3,7 +3,6 @@ public class Mago extends Personajes {
         super(fuerza, inteligencia, resistencia,vida);
     }
 
-
     @Override
     public Integer atacar() {
          Integer valorAtaque = getFuerza() * 2;
